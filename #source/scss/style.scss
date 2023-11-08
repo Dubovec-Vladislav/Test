@@ -1,0 +1,136 @@
+@import "nullstyle.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+// ------------------ Header ------------------- //
+.header {
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+  }
+
+  &__menu {
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__link {
+    display: flex;
+    color: #333;
+    width: 100%;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    &:hover {
+      color: #fff;
+      background-color: #333;
+    }
+  }
+}
+// --------------------------------------------- //
+
+// ------------------- Main -------------------- //
+.main {
+  &__block {
+    flex-grow: 1;
+  }
+
+  &__body {
+    display: flex;
+    max-height: calc(100dvh - (50px + 100px)); // Window - Header + Footer
+    margin: 0px -20px;
+    padding: 20px;
+  }
+
+  &__list {
+    max-width: 200px;
+    width: 100%;
+    padding: 0px 20px;
+    padding: 0px 20px;
+    overflow: auto;
+  }
+
+  &__item {
+    display: flex;
+    color: #333;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.4s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: #333;
+    }
+  }
+
+  &__chat {
+    overflow: auto;
+    padding: 0px 20px;
+  }
+
+  &__message {
+    color: #333;
+    margin: 0px 0px 20px 0px;
+
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+// --------------------------------------------- //
+
+// ------------------ Footer ------------------- //
+.footer {
+  &__block {
+  }
+
+  &__body {
+  }
+
+  &__list {
+    display: flex;
+    min-height: 100px;
+  }
+
+  &__link {
+    display: flex;
+    color: #333;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    &:hover {
+      color: #fff;
+      background-color: #333;
+    }
+  }
+}
+// --------------------------------------------- //
